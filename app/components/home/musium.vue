@@ -6,18 +6,21 @@
       <img 
         src="https://museumvirtual.unitedtractors.com/assets/images/floating_island.png"
         alt=""
-        class="land absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] max-w-5xl object-contain"
+        class="land absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] max-w-5xl object-contain inset-0"
       />
 
       <!-- Konten teks -->
       <div class="text-content max-w-3xl mx-auto flex flex-col items-center absolute z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-        <h2 class="text-4xl font-bold mb-6">Tentang Museum Virtual UT</h2>
+      <div> 
+       <h2 class="text-4xl font-bold mb-6">Tentang Museum Virtual UT</h2>
         <p class="text-lg mb-10 backdrop-blur-lg bg-black/50 p-6 rounded-lg">
           50 tahun sudah United Tractors berkiprah di Indonesia, ada banyak kisah dan tokoh yang lahir menjadi bagian penting dari United Tractors. Memperingati usia emas, United Tractors menyajikan Museum Virtual UT yang mengabadikan memori tentang pengalaman dan perjuangan para founding fathers serta semua pihak yang telah berkontribusi dari awal berdirinya United Tractors hingga saat ini.
         </p>
-        <button class="py-3 px-6 rounded-full bg-primary text-xl font-bold hover:bg-black hover:text-white duration-300 cursor-pointer">
+        <button class="py-3 px-6 rounded-full bg-primary text-xl font-bold hover:bg-black hover:text-white duration-300 cursor-pointer z-20">
           Visit Musium
         </button>
+      </div>
+       
       </div>
     </section>
   </div>

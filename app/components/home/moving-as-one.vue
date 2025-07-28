@@ -3,8 +3,6 @@
     <section
       class="moving-as-one flex flex-col items-center justify-center min-h-screen relative overflow-hidden"
     >
-   
-
       <div class="relative flex items-center max-w-max pr-[5px]">
         <h2 class="text-3xl font-bold italic relative z-10">Moving as one</h2>
         <div
@@ -27,16 +25,26 @@
       </div>
     </section>
 
-    <!-- Tambahan spacer supaya ada konten setelahnya -->
-    <div class="section-3 w-full bg-white z-50 py-20">
-    <div class="max-w-screen-md mx-auto px-6">
+    <!-- One COmmitment -->
+    <section class="section-3 w-full z-50 py-20 relative">
+      <div class="max-w-screen-md mx-auto px-6 text-center">
+        <button
+          class="py-3 px-6 rounded-full bg-primary text-xl font-bold mb-5 hover:bg-black hover:text-white duration-300 cursor-pointer"
+        >
+          One Commitment
+        </button>
 
-     <p class="text-center text-xl mb-6 leading-relaxed">
-       United Tractors berkomitmen untuk menjadi mitra terpercaya bagi pelanggan dengan memberikan solusi dan nilai tambah. Kami selalu berfokus pada keberlanjutan jangka panjang dalam implementasi ESG untuk membangun masa depan yang lebih baik.
-     United Tractors berkomitmen menjadi mitra terpercaya bagi pelanggan dengan memberikan solusi dan nilai tambah. United Tractors selalu berfokus pada keberlanjutan jangka panjang dalam implementasi ESG untuk membangun masa depan yang lebih baik.
-     </p>
-    </div>
-    
+        <p class="text-center text-xl mb-6 leading-relaxed">
+          United Tractors berkomitmen untuk menjadi mitra terpercaya bagi pelanggan dengan
+          memberikan solusi dan nilai tambah. Kami selalu berfokus pada keberlanjutan
+          jangka panjang dalam implementasi ESG untuk membangun masa depan yang lebih
+          baik. United Tractors berkomitmen menjadi mitra terpercaya bagi pelanggan dengan
+          memberikan solusi dan nilai tambah. United Tractors selalu berfokus pada
+          keberlanjutan jangka panjang dalam implementasi ESG untuk membangun masa depan
+          yang lebih baik.
+        </p>
+      </div>
+
       <div class="flex flex-wrap justify-center items-center gap-4">
         <img
           v-for="(image, index) in brandImages"
@@ -46,7 +54,46 @@
           class="w-[150px] h-[70px] object-contain cursor-pointer"
         />
       </div>
-    </div>
+    </section>
+
+    <!--   One Spirit -->
+    <section class="one-spirit py-20 relative z-20">
+      <div class="container">
+        <div class="max-w-screen-md mx-auto px-6 text-center">
+          <button
+            class="py-3 px-6 rounded-full bg-primary text-xl font-bold mb-5 hover:bg-black hover:text-white duration-300 cursor-pointer"
+          >
+            One Spirit
+          </button>
+
+          <p class="text-center text-xl mb-6 leading-relaxed">
+            United Tractors berdedikasi melayani pelanggan dengan sepenuh hati dan
+            mengutamakan kerja sama. United Tractors mengedepankan kolaborasi dengan semua
+            pemangku kepentingan dan menciptakan praktik berkelanjutan jangka panjang
+            melalui produk, layanan, dan semua lini bisnis kami.
+          </p>     
+
+        </div>
+
+        <div class="container">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div
+              v-for="(item, index) in oneSpiritItems"
+              :key="index"
+              class="flex flex-col items-center text-center"
+            >
+              <img
+                :src="item.image"
+                alt="One Spirit Image"
+                class="w-full h-[200px] object-cover rounded-lg mb-4"
+              />
+              <h3 class="text-sm">{{ item.title }}</h3>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>  <!--  end one spirit -->
+
   </div>
 </template>
 
@@ -57,6 +104,29 @@ const brandImages = [
   "https://www.unitedtractors.com/wp-content/uploads/2019/07/logo-utcare-300x141.png",
   "https://www.unitedtractors.com/wp-content/uploads/2019/07/logo-utaction-300x141.png",
   "https://www.unitedtractors.com/wp-content/uploads/2019/07/logo-utgrowth-300x141.png",
+];
+
+const oneSpiritItems = [
+  {
+    title: "Mesin Konstruksi",
+    image: "https://www.unitedtractors.com/wp-content/uploads/2020/07/Slide-96-1-768x432.png",
+  },
+  {
+    title: "Kontraktor Penambangan",
+    image: "https://www.unitedtractors.com/wp-content/uploads/2019/08/mesin-konstruksi-united-tractor-header-1-768x214.jpg",
+  },
+  {
+    title: "Pertambangan",
+    image: "https://www.unitedtractors.com/wp-content/uploads/2020/09/DSC_5606-768x512.jpg",
+  },
+  {
+    title: "Industri Konstruksi",
+    image: "https://www.unitedtractors.com/wp-content/uploads/2020/09/Amman-K-025-2-e1719367115568-768x215.jpeg",
+  },
+  {
+    title: "Energi",
+    image: "https://www.unitedtractors.com/wp-content/uploads/2020/09/Slide-214-768x511.jpg",
+  },
 ];
 
 const { $gsap } = useNuxtApp();
@@ -73,7 +143,7 @@ onMounted(() => {
       end: "+=1500",
       scrub: 1,
       pin: true,
-     //  markers: true,
+      //  markers: true,
     },
   });
 
@@ -96,29 +166,32 @@ onMounted(() => {
       duration: 1.5,
       ease: "power2.out",
     })
-    .to(".moving-as-one", { opacity: 0, duration: .5 });
+    .to(".moving-as-one", { opacity: 0, duration: 0.5 });
 
   // Timeline 2: next-section fade-out setelah user scroll lebih jauh
-  gsap.timeline({
-    scrollTrigger: {
-      trigger: ".section-3",
-      start: "top 80%",
-      end: "top 30%",
-      scrub: true,
-     // markers: true,
-    },
-  }).to(".next-section", { opacity: 0, duration: 1 });
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".section-3",
+        start: "top 80%",
+        end: "top 30%",
+        scrub: true,
+        // markers: true,
+      },
+    })
+    .to(".next-section", { opacity: 0, duration: 1 });
 
   // Timeline 3: animasi munculnya section-3 (images)
-  gsap.timeline({
-    scrollTrigger: {
-      trigger: ".section-3",
-      start: "top 80%",
-      end: "top 50%",
-      scrub: true,
-     // markers: true,
-    },
-  })
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".section-3",
+        start: "top 80%",
+        end: "top 50%",
+        scrub: true,
+        // markers: true,
+      },
+    })
     .from(".section-3", { opacity: 0, y: 100, duration: 1 })
     .from(
       ".section-3 img",
@@ -132,6 +205,4 @@ onMounted(() => {
       "<"
     );
 });
-
-
 </script>

@@ -2,7 +2,8 @@
   <div>
     <home-slideshow />
     <home-sustainability />
-    <home-moving-as-one />
+   <!--  <home-moving-as-one /> -->
+   <home-mao />
     <home-ruang-media />
     <home-musium />
   </div>

@@ -28,12 +28,7 @@
       :style="{ left: 20 + posisi.x + 'px', top: posisi.y + 'px' }"
     >
       <div class="flex justify-between items-center gap-3 text-sm">
-        <button
-          @click="clearSelection"
-          class="mt-2 px-4 py-1 bg-primary text-white rounded-full hover:bg-black hover:text-primary duration-300"
-        >
-          Detail
-        </button>
+    
 
         <button
           @click="closeCard"

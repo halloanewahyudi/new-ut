@@ -10,7 +10,7 @@
   </section >
   <section class="py-20">
    <div class="container ">
-    <Map class="max-w-screen-lg mx-auto" />
+    <Cabang class="mx-auto w-max" />
    </div>
   </section>
   

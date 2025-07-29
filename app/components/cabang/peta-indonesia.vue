@@ -1,7 +1,6 @@
 <template>
   <div>
-    <div class="relative max-h-max">
-      <svg id="peta" viewBox="0 0 1020 420" width="1020" height="420">
+    <svg id="peta" viewBox="0 0 1020 420" width="1020" height="420">
         <path
           id="aceh"
           fill="#FFD800"
@@ -1443,152 +1442,13 @@ l-0.318-2.194l-1.966-2.655l-2.438-0.918l0,0l1.404-0.013l0.51,0.243l2.157-0.306l4
 l3.904-2.438l2.796-1.123l0.638-0.128l0.638,0.128l0.127,0.191L439.366,45.62z"
         ></path>
       </svg>
-
-      <div
-        @click="selectPin(pin.id, index)"
-        class="pin absolute text-sm"
-        v-for="(pin, index) in pins"
-        :key="pin.id"
-        :id="pin.id"
-        :style="{ left: pin.x + 'px', top: pin.y + 'px' }"
-      >
-        <icon
-          :name="selectedPin === pin.id ? 'mdi-map-marker' : 'mdi-map-marker-outline'"
-          class="text-red-500 text-2xl"
-          :class="{ ' scale-150 duration-300 shadow-2xl': selectedPin === pin.id }"
-        />
-        <span class="tooltiptext uppercase text-xs">{{ pin.id }}</span>
-      </div>
-      <transition name="fade">
-        <div
-          class="absolute p-4 rounded-lg bg-white shadow-lg max-w-[260px] border border-gray-200"
-          v-if="selectedPin"
-          :style="{ left: posisi.x + 'px', top: posisi.y + 'px' }"
-        >
-          <h3 class="mb-2">{{ selectedPin }}</h3>
-          <div v-if="dataCabang" class="flex flex-col gap-1 text-xs">
-            <span class="flex"
-              ><icon name="fluent:home-48-filled" class="mr-2" />
-              {{ dataCabang.acf.kontak_cabang.alamat }}</span
-            >
-            <span class="flex"
-              ><icon name="fluent:call-48-filled" class="mr-2" />
-              {{ dataCabang.acf.kontak_cabang.telepon }}</span
-            >
-            <span class="flex"
-              ><icon name="fluent:mail-48-filled" class="mr-2" />
-              {{ dataCabang.acf.kontak_cabang.fax }}
-            </span>
-          </div>
-         
-
-          <div class="flex justify-between items-center gap-3 text-sm">
-            <button
-              @click="
-                showDetail = true;
-                selectedPin = null;
-              "
-              class="mt-2 px-4 py-1 bg-primary text-white rounded-full hover:bg-black hover:text-primary duration-300"
-            >
-              Detail
-            </button>
-
-            <button
-              @click="selectedPin = null"
-              class="mt-2 px-4 py-1 bg-red-500 text-white rounded-full hover:bg-black hover:text-primary duration-300"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </transition>
-    </div>
-    <!-- end map wrapper -->
-  
-    <div
-      v-if="showDetail"
-      class="fixed top-0 left-0 w-full h-full bg-white flex flex-col p-6 lg:p-10 items-center justify-center z-50"
-    >
-      <div v-if="dataPending === 'pending'">loading...</div>
-      <div v-else class="bg-white rounded-xl p-6 lg:p-10 max-w-screen-lg w-full shadow-lg">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="md:col-span-1">
-           
-            <div v-if="dataCabang && !dataPending" class="flex flex-col gap-1 ">
-
-             <h3 class="mb-2 text-lg font-semibold">{{ dataCabang.title }}</h3>
-              <span class="flex"
-                ><icon name="fluent:home-48-filled" class="mr-2" />
-                {{ dataCabang.acf.kontak_cabang.alamat }}</span
-              >
-              <span class="flex"
-                ><icon name="fluent:call-48-filled" class="mr-2" />
-                {{ dataCabang.acf.kontak_cabang.telepon }}</span
-              >
-              <span class="flex"
-                ><icon name="fluent:mail-48-filled" class="mr-2" />
-                {{ dataCabang.acf.kontak_cabang.fax }}
-              </span>
-            </div>
-          </div>
-          <div class="md:col-span-2">
-           
-          {{ dataCabang.acf.gender }} <br> 
-          {{ dataCabang.acf.usia }} <br>
-          {{ dataCabang.acf.agama }} <br>
-         
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-const pins = ref([
-  { id: "medan", x: 69.387, y: 58.364 },
-  { id: "pekanbaru", x: 133.213, y: 106.977 },
-  { id: "padang", x: 111.026, y: 156.18 },
-  { id: "jambi", x: 170.959, y: 161.056 },
-  { id: "palembang", x: 202.834, y: 200.457 },
-  { id: "lampung", x: 212.805, y: 240.321 },
-  { id: "jakarta", x: 249.271, y: 269.071 },
-  { id: "semarang", x: 324.229, y: 288.803 },
-  { id: "surabaya", x: 373.262, y: 298.203 },
-  { id: "pontianak", x: 308.446, y: 138.769 },
-  { id: "sampit", x: 393.995, y: 194.919 },
-  { id: "banjarmasin", x: 410.251, y: 201.428 },
-  { id: "balikpapan", x: 463.298, y: 164.863 },
-  { id: "samarinda", x: 485.203, y: 119.197 },
-  { id: "tarakan", x: 480.013, y: 57.542 },
-  { id: "makasar", x: 532.964, y: 246.869 },
-  { id: "palu", x: 535.287, y: 164.823 },
-  { id: "manado", x: 648.038, y: 103.737 },
-  { id: "sorong", x: 791.467, y: 155.681 },
-  { id: "jayapura", x: 977.327, y: 189.924 },
-]);
 
-const selectedPin = ref(null);
-const posisi = ref({ x: 0, y: 0 });
-const dataCabang = ref(null);
-const dataPending = ref(null);
-const showDetail = ref(false);
-
-const selectPin = (pinId, index) => {
-  selectedPin.value = pinId;
-  posisi.value = { x: pins.value[index].x, y: pins.value[index].y };
-
-  const { data, status } = useApiData("/api/v1/content/" + pinId);
-  dataCabang.value = data.value;
-  dataPending.value = status.value;
-
-  console.log(
-    `Selected pin: ${pins.value[index].x}, Data:`,
-    data.value,
-    "Pending:",
-    dataPending.value
-  );
-};
 </script>
 
-<style></style>
+<style>
+
+</style>

@@ -4,6 +4,14 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+
+  // baseurl
+  runtimeConfig: {
+    public: {
+      baseUrl: 'https://ut2025.sementara.net/wp-json/'
+    }
+  },
+  
   modules: [
     '@vueuse/nuxt',
     '@nuxt/image',
@@ -13,6 +21,8 @@ export default defineNuxtConfig({
    // '@nuxt/fonts',
     '@nuxtjs/google-fonts'
   ],
+
+
   image: {
 
     formats: ['avif', 'webp'],

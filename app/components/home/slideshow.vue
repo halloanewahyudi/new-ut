@@ -114,7 +114,7 @@ const slideShow = [
   {
     title: `<h1> Taking Step Toward  <span> Our Sustainable Journey </span> </h1>`,
     content: `<p>Sebagai distributor alat berat terkemuka dan terbesar di Indonesia, United Tractors berkomitmen untuk menjadi perusahaan yang berkelanjutan dan tangguh pada tahun 2030 dan seterusnya melalui tagline kami, Moving as One.</p>`,
-    image: "/img/slide-2.jpg",
+    image: "/img/slide-3.jpg",
   },
 ];
 

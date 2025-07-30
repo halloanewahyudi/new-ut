@@ -29,7 +29,7 @@
     >
       <div class="flex justify-between items-center gap-3 text-sm">
     
-
+         <a href="#chart" class="mt-2 px-4 py-1 bg-secondary text-white rounded-full hover:bg-black hover:text-primary duration-300"> Detail</a>
         <button
           @click="closeCard"
           class="mt-2 px-4 py-1 bg-red-500 text-white rounded-full hover:bg-black hover:text-primary duration-300"

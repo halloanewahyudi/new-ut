@@ -3,6 +3,8 @@
       <cabang-peta-indonesia />
       <cabang-titik-cabang />
 
+      <div id="chart">
+
       <!-- datanasional
       =============================================  -->
 
@@ -138,6 +140,7 @@
       </div>
 </div>
       <!-- end data cabang -->
+      </div>
     </div>
 </template>
 

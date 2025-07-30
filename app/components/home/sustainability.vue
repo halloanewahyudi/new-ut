@@ -14,7 +14,7 @@
         :key="index"
         class="text-sm pb-2 px-3 border-b  inline-block max-w-max"
         :class="
-          index === activeIndex ? 'font-bold text-primary border-b-4 border-primary' : ' '
+          index === activeIndex ? 'font-bold text-secondary border-b-4 border-secondary' : ' '
         "
         @click="goTo(index)"
       >
@@ -38,7 +38,7 @@
             class="w-full h-[240px] object-cover object-center rounded-l-xl"
           />
           <div
-            class="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-6 flex flex-col justify-between"
+            class="bg-gradient-to-r from-blue-500 to-secondary text-white p-6 flex flex-col justify-between"
           >
             <div>
               <h3 class="text-2xl font-bold mb-3" v-html="i.title"></h3>
@@ -71,7 +71,7 @@
           />
           
           <div
-            class="h-full w-full bg-primary flex flex-col  p-6 lg:p-10 relative overflow-y-auto"
+            class="h-full w-full bg-secondary text-white flex flex-col  p-6 lg:p-10 relative overflow-y-auto"
           >
             <div class="flex justify-between items-center">
               <div class="text-white z-50 flex items-center gap-4">

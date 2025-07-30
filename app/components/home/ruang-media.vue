@@ -7,7 +7,7 @@
           <div
             v-for="(newsItem, index) in news"
             :key="index"
-            class="flex flex-col items-center text-center rounded-xl overflow-hidden bg-white shadow hover:shadow-lg transition-shadow duration-300 ease-in-out group"
+            class="flex flex-col items-center text-center rounded-xl overflow-hidden bg-white border border-gray-200 hover:shadow-lg transition-shadow duration-300 ease-in-out group"
           >
             <img
               :src="newsItem.image"
@@ -19,7 +19,7 @@
        </div>
 
         <button
-            class="py-3 px-6 rounded-full bg-primary text-xl font-bold mb-5 hover:bg-black hover:text-white duration-300 cursor-pointer mx-auto mt-10 "
+            class="py-3 px-6 rounded-full bg-gradient-to-tr from-blue-700 to-secondary hover:shadow-xl text-xl  mb-5 hover:bg-black text-white duration-300 cursor-pointer mx-auto mt-10 "
           >
             Lihat Semua Berita
           </button>

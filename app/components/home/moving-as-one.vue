@@ -7,14 +7,14 @@
         <h2 class="text-3xl font-bold italic relative z-10">Moving as one</h2>
         <div
           id="dot-moving"
-          class="w-[70px] h-[70px] rounded-full bg-primary absolute right-0"
+          class="w-[70px] h-[70px] rounded-full bg-secondary absolute right-0"
         ></div>
       </div>
     </section>
 
     <!-- Next section ditempatkan fixed agar muncul di tengah -->
     <section
-      class="next-section bg-primary fixed inset-0 flex items-center justify-center opacity-0 pointer-events-none z-20"
+      class="next-section bg-secondary fixed inset-0 flex items-center justify-center opacity-0 pointer-events-none z-20"
     >
       <div class="max-w-4xl mx-auto px-6 text-center">
         <p class="text-3xl">
@@ -61,7 +61,7 @@
       <div class="container">
         <div class="max-w-screen-md mx-auto px-6 text-center">
           <button
-            class="py-3 px-6 rounded-full bg-primary text-xl font-bold mb-5 hover:bg-black hover:text-white duration-300 cursor-pointer"
+            class="py-3 px-6 rounded-full bg-secondary text-xl font-bold mb-5 hover:bg-black hover:text-white duration-300 cursor-pointer"
           >
             One Spirit
           </button>

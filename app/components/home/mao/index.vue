@@ -33,14 +33,14 @@
       >
         <aksen-dot class="absolute -top-5 -right-5" />
         <!-- slide wrap -->
-        <div class="lg:flex justify-center items-center mb-10">
+        <div class="lg:flex justify-center items-center mb-10 rounded-full p-2 bg-gray-200 border border-gray-300 max-w-max mx-auto">
           <button
             v-for="(label, index) in tabs"
             :key="index"
-            class="text-sm pb-2 px-3 border-b inline-block max-w-max"
+            class="text-sm py-2 px-3  inline-block max-w-max rounded-full"
             :class="
               index === activeIndex
-                ? 'font-bold text-primary border-b-4 border-primary'
+                ? ' text-white  bg-gradient-to-tr from-blue-700 to-secondary border border-blue-400'
                 : ''
             "
             @click="goTo(index)"

@@ -10,7 +10,7 @@
           >
             <div class="container min-h-screen flex flex-col justify-center ">
               <div
-                class="max-w-2xl slide-content flex flex-col gap-6 relative backdrop-blur-2xl backdrop-saturate-100 p-6 rounded-xl border border-light/40"
+                class="max-w-2xl slide-content flex flex-col gap-6 relative "
               >
                 <h1
                   v-html="i.title"
@@ -113,7 +113,7 @@ const slideShow = [
   },
   {
     title: `<h1> Taking Step Toward  <span> Our Sustainable Journey </span> </h1>`,
-    content: `Sebagai distributor alat berat terkemuka dan terbesar di Indonesia, United Tractors berkomitmen untuk menjadi perusahaan yang berkelanjutan dan tangguh pada tahun 2030 dan seterusnya melalui tagline kami, Moving as One.`,
+    content: `<p>Sebagai distributor alat berat terkemuka dan terbesar di Indonesia, United Tractors berkomitmen untuk menjadi perusahaan yang berkelanjutan dan tangguh pada tahun 2030 dan seterusnya melalui tagline kami, Moving as One.</p>`,
     image: "/img/slide-2.jpg",
   },
 ];

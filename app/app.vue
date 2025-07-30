@@ -19,14 +19,14 @@ const lenisOptions = {
 
 const lenis = useLenis((lenis) => {
   // called every scroll
-  console.log(lenis)
+  // console.log(lenis)
 })
 
 watch(
   lenis,
   (lenis) => {
     // lenis instance
-    console.log(lenis)
+  //   console.log(lenis)
   },
   { immediate: true }
 )

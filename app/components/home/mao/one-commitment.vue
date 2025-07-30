@@ -2,7 +2,7 @@
   <div>
      <div class="max-w-screen-md mx-auto px-6 text-center">
         <button
-          class="py-3 px-6 rounded-full bg-primary text-xl font-bold mb-5 hover:bg-black hover:text-white duration-300 cursor-pointer"
+          class="py-3 px-6 rounded-full  bg-gradient-to-tr from-blue-700 to-secondary hover:shadow-xl text-xl  mb-5  text-white duration-300 cursor-pointer"
         >
           One Commitment
         </button>

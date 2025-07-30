@@ -99,7 +99,7 @@ const slideShow = [
     title: `<h1> Lindungi Bumi dengan  <span> Lestarikan Keanekaragaman Hayati </span> </h1>`,
     content: `<p> United Tractors berkomitmen dalam melindungi keanekaragaman hayati di wilayah operasionalnya dengan menjunjung tinggi prinsip yang berkelanjutan, guna menjaga kesinambungan yang harmonis antara lingkungan, manusia, dan kegiatan usaha.</p>`,
     // image: "/img/slide-1.jpg",
-    video: "/cover-2.mp4",
+    video: "/ut-cover.mp4",
     buttons: [
       {
         title: "agincourtresources.com",

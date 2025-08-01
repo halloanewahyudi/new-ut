@@ -26,7 +26,7 @@
       </div>
     </section>
 
-    <section class="section-3 min-h-screen relative z-50 py-20 bg-cover bg-center bg-[url('./img/bg.png')]">
+    <section class="section-3 min-h-screen relative z-50 py-20 bg-cover bg-center bg-[url('/img/bg.png')]">
       <!-- slide move as one -->
 
       <div

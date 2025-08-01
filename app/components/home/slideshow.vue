@@ -97,7 +97,7 @@
 const slideShow = [
   {
     title: `<h1> Evolve and Grow </h1>`,
-    content: `<p> Diversifikasi, inovasi, diferensiasi, dan operational excellence</p>`,
+    content: `<p> Diversifikasi, inovasi, diferensiasi, dan operational excellence</p> <p>Loremipsum doloretsitamet consectetur adipisicing elit. Quas, quae.</p>`,
     // image: "/img/slide-1.jpg",
     video: "/vid-slider-1.mp4",
     buttons: [
@@ -115,6 +115,7 @@ const slideShow = [
     title: `<h1> Taking Step Toward Our Sustainable Journey </h1>`,
     content: `<p>United Tractors berkomitmen menjadi perusahaan bekelanjutan dan Tangguh.</p>`,
     image: "/img/slide-3.jpg",
+
   },
 ];
 

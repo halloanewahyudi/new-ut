@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="musium relative z-20 bg-gradient-to-b from-blue-100 to-blue-700 h-screen overflow-hidden">
-      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black-70 to-black/60"></div>
+   
       <!-- Gambar floating island -->
       <img 
         src="https://museumvirtual.unitedtractors.com/assets/images/floating_island.png"

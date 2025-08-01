@@ -42,7 +42,7 @@
             class="text-sm py-2 px-3  inline-block max-w-max rounded-full"
             :class="
               index === activeIndex
-                ? ' text-white  bg-gradient-to-tr from-blue-700 to-secondary border border-blue-400'
+                ? '  bg-gradient-to-tr from-yellow-300 to-primary border border-gray-400'
                 : ''
             "
             @click="goTo(index)"
@@ -93,7 +93,7 @@ import OneSynergy from "./one-synergy.vue";
 const maoSlide = ref(null);
 const activeIndex = ref(1);
 const selectedIndex = ref<number | null>(null);
-const tabs = ["One Commitment", "One Spirit", "One Synergy"];
+const tabs = ["<b>One</b> Commitment", "<b>One</b> Spirit", "<b>One</b> Synergy"];
 // Function to handle slide change
 const handleSlideChange = (splide: any) => {
   activeIndex.value = splide.index;

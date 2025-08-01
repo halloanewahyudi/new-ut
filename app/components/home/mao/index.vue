@@ -32,10 +32,11 @@
       <div
         class="max-w-screen-lg mx-auto rounded-xl bg-white shadow-2xl border-gray-300 p-6 lg:p-10 relative"
       >
-        <aksen-dot class="absolute -top-5 -right-5" />
+      
         <!-- slide wrap -->
         <div class="lg:flex justify-center items-center mb-10 rounded-full p-2 bg-gray-200 border border-gray-300 max-w-max mx-auto">
           <button
+          v-html=" label"
             v-for="(label, index) in tabs"
             :key="index"
             class="text-sm py-2 px-3  inline-block max-w-max rounded-full"
@@ -46,7 +47,7 @@
             "
             @click="goTo(index)"
           >
-            {{ label }}
+            
           </button>
         </div>
 

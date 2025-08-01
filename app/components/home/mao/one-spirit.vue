@@ -26,7 +26,7 @@
                 class="w-full h-[150px] object-cover group-hover:scale-110 transition-transform duration-300 ease-in-out"
               />
               <h3 class="text-sm absolute text-white bottom-6 z-10">{{ item.title }}</h3>
-              <div class="absolute bottom-0 left-0 right-0 h-full bg-gradient-to-t from-black/70 to-transparent"> </div>
+              <div class="absolute bottom-0 left-0 right-0 h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent"> </div>
             </div>
         </div>
         </div>

@@ -96,10 +96,10 @@
 
 const slideShow = [
   {
-    title: `<h1> EVOLVE AND GROW </h1>`,
+    title: `<h1> Evolve and Grow </h1>`,
     content: `<p> Diversifikasi, inovasi, diferensiasi, dan operational excellence</p>`,
     // image: "/img/slide-1.jpg",
-    video: "/truk.mp4",
+    video: "/vid-slider-1.mp4",
     buttons: [
       {
         title: "agincourtresources.com",

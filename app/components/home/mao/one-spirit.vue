@@ -2,11 +2,7 @@
   <div>
      <div class="container">
         <div class="max-w-screen-md mx-auto px-6 text-center">
-          <button
-            class="py-3 px-6 rounded-full bg-gradient-to-tr from-blue-700 to-secondary hover:shadow-xl text-xl  mb-5  text-white duration-300 cursor-pointer"
-          >
-            One Spirit
-          </button>
+          <h4 class="text-3xl font-bold mb-2">Lini Bisnis</h4>
 
           <p class="text-center  mb-6 leading-relaxed mb-">
             United Tractors berdedikasi melayani pelanggan dengan sepenuh hati dan
@@ -43,23 +39,23 @@
 const oneSpiritItems = [
   {
     title: "Mesin Konstruksi",
-    image: "https://www.unitedtractors.com/wp-content/uploads/2020/07/Slide-96-1-768x432.png",
+    image: "/img/mesin-konstruksi.jpg",
   },
   {
     title: "Kontraktor Penambangan",
-    image: "https://www.unitedtractors.com/wp-content/uploads/2019/08/mesin-konstruksi-united-tractor-header-1-768x214.jpg",
+    image: "/img/kontraktor-pertambangan-1.jpg",
   },
   {
     title: "Pertambangan",
-    image: "https://www.unitedtractors.com/wp-content/uploads/2020/09/DSC_5606-768x512.jpg",
+    image: "/img/kontraktor-pertambangan.jpg",
   },
   {
     title: "Industri Konstruksi",
-    image: "https://www.unitedtractors.com/wp-content/uploads/2020/09/Amman-K-025-2-e1719367115568-768x215.jpeg",
+    image: "/img/industri-konstruksi.jpg",
   },
   {
     title: "Energi",
-    image: "https://www.unitedtractors.com/wp-content/uploads/2020/09/Slide-214-768x511.jpg",
+    image: "/img/energi-1.jpg",
   },
 ];
 </script>

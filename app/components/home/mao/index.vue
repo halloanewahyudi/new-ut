@@ -17,10 +17,11 @@
       class="next-section bg-primary fixed inset-0 flex items-center justify-center opacity-0 pointer-events-none z-20"
     >
       <div class="max-w-4xl mx-auto px-6 text-center">
-        <p class="text-3xl">
-          Perjalanan Moving as One kami berpedoman pada 10 Aspirasi Berkelanjutan United
+        <p class="text-3xl leading-snug">
+          Perjalanan Moving as One kami berpedoman pada <br> <span class="text-5xl font-bold"> 10 Aspirasi Berkelanjutan </span> <br>  United
           Tractors Group Menuju 2030, sebuah langkah kami untuk memimpin dengan solusi
-          inovatif yang menggabungkan One Commitment, One Spirit, dan One Synergy.
+          inovatif yang menggabungkan <br> 
+          <span class="font-bold text-delay"><span> One Commitment, </span>  <span>Spirit, </span> <span>dan One Synergy. </span>  </span> 
         </p>
       </div>
     </section>
@@ -143,6 +144,7 @@ onMounted(() => {
       ease: "power1.inOut",
     })
     .to(".moving-as-one", { backgroundColor: "bg-primary" }, "<")
+    
     // next-section fade-in setelah lingkaran penuh
     .to(".next-section", {
       opacity: 1,
@@ -150,6 +152,7 @@ onMounted(() => {
       duration: 1.5,
       ease: "power2.out",
     })
+    .from('.text-delay', { opacity: 0, y: -50, duration: 2, delay: 0.5, ease: "power2.out",stagger: 0.3}, "<")
     .to(".moving-as-one", { opacity: 0, duration: 0.5 });
 
   // Timeline 2: next-section fade-out setelah user scroll lebih jauh

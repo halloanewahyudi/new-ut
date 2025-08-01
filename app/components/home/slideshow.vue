@@ -96,10 +96,10 @@
 
 const slideShow = [
   {
-    title: `<h1> Lindungi Bumi dengan  <span> Lestarikan Keanekaragaman Hayati </span> </h1>`,
-    content: `<p> United Tractors berkomitmen dalam melindungi keanekaragaman hayati di wilayah operasionalnya dengan menjunjung tinggi prinsip yang berkelanjutan, guna menjaga kesinambungan yang harmonis antara lingkungan, manusia, dan kegiatan usaha.</p>`,
+    title: `<h1> EVOLVE AND GROW </h1>`,
+    content: `<p> Diversifikasi, inovasi, diferensiasi, dan operational excellence</p>`,
     // image: "/img/slide-1.jpg",
-    video: "/ut-cover.mp4",
+    video: "/truk.mp4",
     buttons: [
       {
         title: "agincourtresources.com",
@@ -112,8 +112,8 @@ const slideShow = [
     ],
   },
   {
-    title: `<h1> Taking Step Toward  <span> Our Sustainable Journey </span> </h1>`,
-    content: `<p>Sebagai distributor alat berat terkemuka dan terbesar di Indonesia, United Tractors berkomitmen untuk menjadi perusahaan yang berkelanjutan dan tangguh pada tahun 2030 dan seterusnya melalui tagline kami, Moving as One.</p>`,
+    title: `<h1> Taking Step Toward Our Sustainable Journey </h1>`,
+    content: `<p>United Tractors berkomitmen menjadi perusahaan bekelanjutan dan Tangguh.</p>`,
     image: "/img/slide-3.jpg",
   },
 ];

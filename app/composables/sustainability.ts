@@ -13,7 +13,7 @@ export const useSustainability = () => {
       title: "Mini Hydro Power Plant",
       description: `<p> UT membangun dua Pembangkit Listrik Tenaga Mini-hidro (PLTM) yaitu PLTM Kalipelus berkapasitas 0,5MW di Jawa Tengah dan PLTM Besai Kemu di Lampung yang memiliki kapasitas sebesar 7MW. PLTM Besai Kemu saat ini dalam proses konstruksi dan diperkirakan akan beroperasi pada akhir tahun 2023.</p>
 <p>UT melakukan strategi transisi melalui bisnis Energi Baru dan Terbarukan (EBT) dengan investasi pada PT Arkora Hydro Tbk (Arkora) dengan kepemilikan saham sebesar 31,49%. Arkora mengoperasikan dua PLTM, yaitu PLTM Cikopo 2 dengan kapasitas 7,4 MW dan PLTM Tomasa dengan kapasitas 10 MW</p>`,
-      image: "/img/img-3.jpg"
+      image: "/img/sustainability-initiative-mini-hydro.jpg"
     },
     {
       title: "Biodiesel(B20 & B30)",
@@ -37,7 +37,7 @@ export const useSustainability = () => {
 Sampai dengan saat ini, SOBAT telah membina sebanyak 1.614 sekolah dan 4.728 guru di seluruh Indonesia dengan total nilai bantuan yang telah diberikan untuk sekolah-sekolah dalam 3 tahun terakhir senilai Rp10.000.000.000.
       </p>
       `,
-      image: "/img/img-5.jpg"
+      image: "/img/sustainability-initiative-sobat.jpg"
     }
   ])
   return {

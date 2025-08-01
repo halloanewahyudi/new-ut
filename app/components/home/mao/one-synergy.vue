@@ -2,11 +2,7 @@
   <div>
       <div class="container">
         <div class="max-w-screen-md mx-auto px-6 text-center">
-          <button
-            class="py-3 px-6 rounded-full bg-gradient-to-tr from-blue-700 to-secondary hover:shadow-xl text-xl  mb-5 hover:bg-black text-white duration-300 cursor-pointer"
-          >
-            One Sinergy
-          </button>
+           <h4 class="text-3xl font-bold mb-2">Sinergi dengan Pelanggan</h4>
 
           <p class="text-center mb-6 leading-relaxed">
            United Tractors bersinergi dengan pelanggan untuk membangun hubungan mutualisme dan keberhasilan bersama. Dalam setiap kontribusi yang diberikan, United Tractors mendukung pertumbuhan keberlanjutan Indonesia melalui tata kelola perusahaan yang baik dan praktik bisnis yang berkelanjutan & bertanggung jawab.

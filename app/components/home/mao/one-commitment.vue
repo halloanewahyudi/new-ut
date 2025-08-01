@@ -1,11 +1,7 @@
 <template>
   <div>
      <div class="max-w-screen-md mx-auto px-6 text-center">
-        <button
-          class="py-3 px-6 rounded-full  bg-gradient-to-tr from-blue-700 to-secondary hover:shadow-xl text-xl  mb-5  text-white duration-300 cursor-pointer"
-        >
-          One Commitment
-        </button>
+        <h4 class="text-3xl font-bold mb-2">Implementasi ESG</h4>
 
         <p class="text-center  mb-6 leading-relaxed">
           United Tractors berkomitmen untuk menjadi mitra terpercaya bagi pelanggan dengan

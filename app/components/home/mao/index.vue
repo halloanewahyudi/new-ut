@@ -185,7 +185,7 @@ onMounted(() => {
 </script>
 <style scoped>
 .section-3 {
-  background-image: url('/img/bg.png');
+  background-image: url('/img/bg-2.jpg');
   background-size: cover;
   background-position: center;
  

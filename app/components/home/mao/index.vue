@@ -26,7 +26,7 @@
       </div>
     </section>
 
-    <section class="section-3 min-h-screen relative z-50 py-20 bg-cover bg-center bg-[url('/img/bg.png')]">
+    <section class="section-3 min-h-screen relative z-50 py-20 bg-cover bg-center">
       <!-- slide move as one -->
 
       <div
@@ -183,3 +183,11 @@ onMounted(() => {
     .from(".section-3", { opacity: 0, y: 100, duration: 1 });
 });
 </script>
+<style scoped>
+.section-3 {
+  background-image: url('./img/bg.png');
+  background-size: cover;
+  background-position: center;
+ 
+}
+</style>

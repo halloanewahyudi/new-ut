@@ -11,7 +11,7 @@
         ></div>
       </div>
     </section>
-
+ 
     <!-- Next section ditempatkan fixed agar muncul di tengah -->
     <section
       class="next-section bg-primary fixed inset-0 flex items-center justify-center opacity-0 pointer-events-none z-20"

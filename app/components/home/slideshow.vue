@@ -14,7 +14,7 @@
               >
                 <h1
                   v-html="i.title"
-                  class="slide-title text-3xl lg:text-4xl text-white font-bold"
+                  class="slide-title text-3xl lg:text-6xl text-white font-bold"
                 ></h1>
                 <div v-html="i.content" class="text-white flex flex-col gap-4"></div>
                 <div
@@ -49,7 +49,7 @@
             >
               <h1
                 v-html="i.title"
-                class="slide-title text-3xl lg:text-4xl text-white font-bold"
+                class="slide-title text-3xl lg:text-6xl text-white font-bold"
               ></h1>
               <div v-html="i.content" class="text-white flex flex-col gap-4"></div>
               <div

@@ -7,14 +7,17 @@
           <div
             v-for="(newsItem, index) in news"
             :key="index"
-            class="flex flex-col items-center text-center rounded-xl overflow-hidden bg-white border border-gray-200 hover:shadow-lg transition-shadow duration-300 ease-in-out group"
+            class="flex flex-col items-center rounded-xl overflow-hidden duration-300 ease-in-out group cursor-pointer"
           >
-            <img
+          <div class="rounded-xl overflow-hidden group mb-5">
+           <img
               :src="newsItem.image"
               alt="News Image"
-              class="w-full h-[200px] object-cover  group-hover:scale-105 transition-transform duration-300"
+              class="w-full h-[200px] object-cover  group-hover:scale-105 transition-transform duration-300 "
             />
-            <h3 class="text-sm p-4">{{ newsItem.title }}</h3>
+          </div>
+           
+            <h3 class="text-sm ">{{ newsItem.title }}</h3>
           </div>
        </div>
 

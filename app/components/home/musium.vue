@@ -16,8 +16,9 @@
         <p class="text-lg mb-10 ">
           50 tahun sudah United Tractors berkiprah di Indonesia, ada banyak kisah dan tokoh yang lahir menjadi bagian penting dari United Tractors. Memperingati usia emas, United Tractors menyajikan Museum Virtual UT yang mengabadikan memori tentang pengalaman dan perjuangan para founding fathers serta semua pihak yang telah berkontribusi dari awal berdirinya United Tractors hingga saat ini.
         </p>
-        <button class="py-3 px-6 rounded-full bg-primary text-black text-xl font-bold hover:bg-secondary hover:text-white duration-300 cursor-pointer z-20">
-          Visit Museum
+        <button class="group flex items-center mx-auto  gap-2 py-2 px-4 rounded-full bg-primary text-black  hover:bg-secondary hover:text-white duration-300 cursor-pointer z-20">
+          Visit Museum 
+         <icon name="fluent:arrow-circle-right-12-filled" class="group-hover:translate-x-2 duration-300" />
         </button>
       </div>
        

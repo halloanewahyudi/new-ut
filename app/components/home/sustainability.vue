@@ -50,9 +50,9 @@
 
             <button
               @click=" openDetail(index)"
-              class="text-wihite flex items-center gap-2  duration-300 cursor-pointer self-end py-1 px-4 rounded-full bg-primary text-black hover:bg-black hover:text-primary"
+              class="group flex items-center gap-2  duration-300 cursor-pointer self-end py-1 px-4 rounded-full bg-primary text-black hover:bg-black hover:text-primary "
             >
-              Explore <icon name="fluent:arrow-circle-right-12-filled" />
+              Explore <icon name="fluent:arrow-circle-right-12-filled group-hover:translate-x-2 duration-300" />
             </button>
           </div>
         </div>

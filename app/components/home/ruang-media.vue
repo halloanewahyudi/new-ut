@@ -22,9 +22,9 @@
        </div>
 
         <button
-            class="py-3 px-6 rounded-full bg-gradient-to-tr from-blue-700 to-secondary hover:shadow-xl text-xl  mb-5 hover:bg-black text-white duration-300 cursor-pointer mx-auto mt-10 "
+            class="group py-2 px-4 flex items-center gap-2 rounded-full bg-gradient-to-tr from-blue-700 to-secondary hover:shadow-xl  mb-5 hover:bg-black text-white duration-300 cursor-pointer mx-auto mt-10 "
           >
-            Lihat Semua Berita
+            Lihat Semua Berita <icon name="fluent:arrow-circle-right-12-filled" class="group-hover:translate-x-2 duration-300" />
           </button>
 
      </div>

@@ -8,7 +8,7 @@
             
             class="w-full min-h-screen flex flex-col justify-center items-center -left-[2px]"
           >
-            <div class="container min-h-screen flex flex-col justify-center ">
+            <div class="container min-h-screen flex flex-col justify-end pb-32 ">
               <div
                 class="max-w-2xl slide-content flex flex-col gap-6 relative "
               >
@@ -36,7 +36,7 @@
 
         <div
           v-else
-          class="slide min-h-screen flex flex-col justify-center bg-no-repeat bg-cover"
+          class="slide min-h-screen flex flex-col justify-end pb-32 bg-no-repeat bg-cover"
         >
           <img
             :src="i.image"
@@ -97,7 +97,7 @@
 const slideShow = [
   {
     title: `<h1> Evolve and Grow </h1>`,
-    content: `<p> Diversifikasi, inovasi, diferensiasi, dan operational excellence</p> <p>Loremipsum doloretsitamet consectetur adipisicing elit. Quas, quae.</p>`,
+    content: `<p> Diversifikasi, inovasi, diferensiasi, dan operational excellence</p>`,
     // image: "/img/slide-1.jpg",
     video: "/vid-slider-1.mp4",
     buttons: [

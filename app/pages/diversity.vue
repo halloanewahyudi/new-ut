@@ -1,13 +1,6 @@
 <template>
   <div>
-  <section class=" bg-black text-white">
-    <div class="container">
-      <div class="flex flex-col items-center justify-center min-h-[280px] py-12">
-        <h1 class="text-3xl font-bold mb-4">Diversity Page</h1>
-        <p class="text-primary dark:text-primary">This subtitle description goes here.</p>
-      </div>
-    </div>
-  </section >
+
   <section class="py-20">
    <div class="container ">
     <Cabang class="mx-auto w-max" />
@@ -18,7 +11,15 @@
 </template>
 
 <script lang="ts" setup>
-   
+    definePageMeta({
+   layout: "layout-page",
+   name: "Diversity",
+   hero: {
+     image: "/img/diversity-hero.jpg",
+     title: "Mensinergikan Keberagaman Untuk Membangun Indonesia",
+     subtitle: "United Tractors mengedepankan persamaan hak dan mengakomodasi  keberagamaan di seluruh kantor cabangnya.",
+   }
+ })
 </script>
 
 <style>

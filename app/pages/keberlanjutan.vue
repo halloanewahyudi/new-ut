@@ -1,8 +1,10 @@
 <template>
   <div>
-    <div class="container">
+  <section>
+      <div class="container">
     
     </div>
+  </section>
   </div>
 </template>
 

@@ -113,10 +113,15 @@ const slideShow = [
   },
   {
     title: `<h1> Taking Step Toward Our Sustainable Journey </h1>`,
-    content: `<p>United Tractors berkomitmen menjadi perusahaan bekelanjutan dan Tangguh.</p>`,
-    image: "/img/slide-3.jpg",
+    content: `<p>Sebagai distributor alat berat terbesar di Indonesia United Tractors berkomitmen menjadi perusahaan bekelanjutan.</p>`,
+    image: "/img/slide-1.jpg",
 
   },
+  {
+    title:`<h1>Lestarikan Keanekaragaman Hayati</h1>`,
+    content:`<p>Menjaga kesinambungan antara lingkungan, manusia, dan kegiatan usaha.</p>`,
+    image: "/img/slide-3.jpg",
+  }
 ];
 
 const slideOptions = {

@@ -2,7 +2,7 @@
   <div>
   <ui-navbar/>
     <slot />
-    <Footer/>
+   
   </div>
 </template>
 

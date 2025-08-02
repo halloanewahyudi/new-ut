@@ -1,7 +1,7 @@
 <template>
   <div>
      <div class="container">
-        <div class="max-w-screen-md mx-auto px-6 text-center">
+        <div class=" px-6 text-center">
           <h4 class="text-3xl font-bold mb-2">Lini Bisnis</h4>
 
           <p class="text-center  mb-6 leading-relaxed mb-">
@@ -12,8 +12,8 @@
           </p>     
 
         </div>
+        </div>
 
-        <div class="container">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 juztify-center items-center">
             <div
               v-for="(item, index) in oneSpiritItems"
@@ -29,8 +29,8 @@
               <div class="absolute bottom-0 left-0 right-0 h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent"> </div>
             </div>
         </div>
-        </div>
-      </div>
+        
+      
   </div>
 </template>
 

@@ -38,6 +38,7 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       'Plus Jakarta Sans': [200, 300, 400, 500, 600, 700, 800],
+      'Inter': [100, 200, 300, 400, 500, 600, 700, 800, 900]
     },
     display: 'swap',
     preconnect: true,

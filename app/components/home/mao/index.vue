@@ -4,10 +4,10 @@
       class="moving-as-one flex flex-col items-center justify-center min-h-screen relative overflow-hidden"
     >
       <div class="relative flex items-center max-w-max pr-[5px]">
-        <h2 class="text-3xl font-bold italic relative z-10">Moving as one</h2>
+        <h2 class="text-5xl font-extrabold italic relative z-10 font-inter">Moving as one</h2>
         <div
           id="dot-moving"
-          class="w-[70px] h-[70px] rounded-full bg-primary absolute right-0"
+          class="w-[100px] h-[100px] rounded-full bg-primary absolute -right-1"
         ></div>
       </div>
     </section>
@@ -26,7 +26,7 @@
       </div>
     </section>
 
-    <section class="section-3 min-h-screen relative z-50 py-20 bg-cover bg-center">
+    <section class="section-3 min-h-screen relative z-30 py-20 bg-cover bg-center">
       <!-- slide move as one -->
 
       <div

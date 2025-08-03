@@ -79,7 +79,7 @@ definePageMeta({
   name: "Karir",
   hero: {
     image: "/img/career-hero.jpg",
-    title: "Mari Membangun Masa Depan Bersama",
+    title: "Lowongan Tersedia",
     subtitle: "Bersama United Tractors Untuk Hari Ini dan Masa Depan Indonesia.",
   },
 });

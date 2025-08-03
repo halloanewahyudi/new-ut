@@ -6,7 +6,7 @@
       <img 
         src="https://museumvirtual.unitedtractors.com/assets/images/floating_island.png"
         alt=""
-        class="land absolute top-20 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] max-w-5xl object-contain inset-0"
+        class="land absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] max-w-5xl object-contain inset-0"
       />
 
       <!-- Konten teks -->

@@ -49,8 +49,8 @@
         >
 
           <icon :name="`${item.icon}`" class="text-5xl lg:text-7xl opacity-65" />
-
-          <div class="flex items-end text-4xl  mt-2">
+          <div>
+           <div class="flex items-end text-4xl  mt-2">
             <ui-counter
               :target="item.value"
               :decimals="item.decimal"
@@ -59,7 +59,6 @@
             />
             <span> {{ item.unit }} </span>
           </div>
-          <div>
             <p class="text-xl lg:text-3xl mt-2 font-bold">{{ item.description }}</p>
             <p class="text-sm mt-2">{{ item.subtext }}</p>
           </div>

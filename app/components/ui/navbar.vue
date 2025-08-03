@@ -85,6 +85,7 @@
                   :key="index"
                   @mouseenter="getMenuChild(menu)"
                   class="menu-item"
+                  :class=" selectedMenu === menu.child ? 'active' : '' "
                 >
                   <nuxt-link
                     :to="menu.link"
@@ -253,3 +254,9 @@ const closeMenu = () => {
     openMenu.value = false
 }
 </script>
+
+<style scoped >
+ .menu-item.active a {
+    color: #000; 
+ }
+</style>

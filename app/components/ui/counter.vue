@@ -3,6 +3,7 @@ interface Props {
   target: number
   duration?: number
   formatter?: (val: number) => string
+  decimals?: number // opsional, untuk tentukan berapa angka desimal
 }
 
 const props = defineProps<Props>()
@@ -11,13 +12,16 @@ const rawCount = ref(0)
 const el = ref<HTMLElement | null>(null)
 let observer: IntersectionObserver | null = null
 
-// computed untuk format angka
 const displayValue = computed(() => {
   if (props.formatter) {
     return props.formatter(rawCount.value)
   }
-  // default: ribuan pakai koma
-  return rawCount.value.toLocaleString()
+
+  const decimals = props.decimals ?? 2
+  return rawCount.value.toLocaleString(undefined, {
+    minimumFractionDigits: decimals,
+    maximumFractionDigits: decimals
+  })
 })
 
 const animateCount = () => {
@@ -28,7 +32,8 @@ const animateCount = () => {
 
   const step = (currentTime: number) => {
     const progress = Math.min((currentTime - startTime) / duration, 1)
-    rawCount.value = Math.floor(progress * (end - start) + start)
+    // tidak pakai floor, biarkan float
+    rawCount.value = progress * (end - start) + start
     if (progress < 1) {
       requestAnimationFrame(step)
     }

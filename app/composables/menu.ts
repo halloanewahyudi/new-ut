@@ -369,7 +369,7 @@ export const useMenu = () => {
         {
           name:'Karier',
           slug:'karier',
-          link:'#',
+          link:'/career',
           child:[
             {
               name:'Berkarier di UT',
@@ -379,7 +379,7 @@ export const useMenu = () => {
             {
               name:'Info Rekrutmen',
               slug:'info-rekrutmen',
-              link:'#'
+              link:'/career'
             },
             {
               name:'Tanya Jawab',

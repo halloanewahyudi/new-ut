@@ -15,28 +15,16 @@
     </div>
   </section>
   <section>
-    <div class="container">
-      <h2 class="text-2xl lg:text-4xl font-bold mb-5">Our Approach and Effort</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
-        <div class="">
-          <p class="leading-loose">
-            As a leading player in the Indonesian energy sector, we have a responsibility
-            to forge a path that diverges from business-as-usual and toward a sustainable
-            future. We understand that to continue providing the energy driving
-            Indonesia’s development while helping the country meet its emissions goals
-            under the Paris Agreement, the adoption of clean technologies in both thermal
-            production and power generation will be critica
+    <div class="container text-center">
+       <p class="leading-snug text-4xl mb-5 font-bold text-secondary">
+            Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
           </p>
-        </div>
-        <div class="">
-          <p class="leading-loose">
-            This is the reason we invested in decarbonization measures and technologies,
-            relentlessly pursue efficiencies in energy and water use, and work to minimize
-            our environmental footprint.
+
+           <p class="leading-loose">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry’s standard dummy text.
           </p>
-        </div>
-      </div>
     </div>
+
   </section>
   <section class="py-16">
     <div class="container mx-auto">
